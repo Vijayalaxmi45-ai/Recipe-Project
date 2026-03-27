@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Authentic East Indian recipes. Discover how to cook Steamed Modak, Fish Curry, and unique regional sweets.">
+    <title>East Indian Recipes | SpiceRoute</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap and Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand brand fs-3" href="index.html">Spice<span>Route</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Recipes</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="north_indian.html">North Indian</a></li>
+                            <li><a class="dropdown-item" href="south_indian.html">South Indian</a></li>
+                            <li><a class="dropdown-item" href="west_indian.html">West Indian</a></li>
+                            <li><a class="dropdown-item" href="east_indian.html">East Indian</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="region-section pt-5 mt-5">
+        <div class="container text-center pt-5">
+            <div class="section-title mb-0">
+                <span>Steamed & Sweet Flavors</span>
+                <h2>East Indian Recipes</h2>
+            </div>
+        </div>
+    </header>
+
+    <!-- Recipe Grid -->
+    <section class="container mb-5">
+        <div class="row g-4">
+            <!-- Modak -->
+            <div class="col-md-6 col-lg-4">
+                <div class="recipe-card">
+                    <div class="card-img-container">
+                        <img src="img/modak.jfif" alt="Modak">
+                        <span class="card-badge">Festive</span>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Ukadiche Modak</h4>
+                        <p class="text-secondary small mb-4">Steamed rice flour dumplings stuffed with sweet coconut and jaggery.</p>
+                        <button class="btn btn-primary-custom w-100" data-bs-toggle="modal" data-bs-target="#recipeModal" 
+                                data-bs-title="Ukadiche Modak" 
+                                data-bs-desc="A divine Maharashtrian sweet, especially popular during Ganesh Chaturthi. Soft, steamed rice flour shells filled with a cardamom-spiced coconut sweet."
+                                data-bs-ingredients='["2 cups Rice flour", "1 cup Grated coconut", "1 cup Jaggery", "Nutmeg powder", "Cardamom powder", "Ghee", "Milk"]'
+                                data-bs-steps='["Cook coconut and jaggery in a pan until thick.", "Prepare dough by mixing rice flour in boiling water with a bit of ghee.", "Knead dough smooth- it must be warm.", "Shape small balls into petals/cones and fill with stuffing.", "Steam for 10-15 minutes.", "Serve hot with ghee."]'>
+                            View Recipe
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fish Curry -->
+            <div class="col-md-6 col-lg-4">
+                <div class="recipe-card">
+                    <div class="card-img-container">
+                        <img src="https://images.unsplash.com/photo-1589187151044-578bb6244431?q=80&w=2070&auto=format&fit=crop" alt="Bengali Fish Curry">
+                        <span class="card-badge">Bengali Classic</span>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Machher Jhol</h4>
+                        <p class="text-secondary small mb-4">Light and flavorful Bengali fish curry with mustard oil and spices.</p>
+                        <button class="btn btn-primary-custom w-100" data-bs-toggle="modal" data-bs-target="#recipeModal" 
+                                data-bs-title="Machher Jhol" 
+                                data-bs-desc="A light, healthy, and staple fish curry from West Bengal. Usually made with Rohu or Catla fish and a blend of panch phoron spices."
+                                data-bs-ingredients='["500g Fish steaks", "Mustard oil", "Potatoes (cubed)", "Turmeric, Chilli powder", "Panch phoron (5-spice mix)", "Ginger-chilli paste", "Tomatoes"]'
+                                data-bs-steps='["Marinate fish with turmeric and salt, fry in mustard oil.", "Sauté panch phoron and potatoes in same oil.", "Add ginger paste, turmeric, and tomato- cook well.", "Pour water and simmer until potatoes are soft.", "Add fried fish and cook for 5 more minutes.", "Garnish with coriander."]'>
+                            View Recipe
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mishti Doi -->
+            <div class="col-md-6 col-lg-4">
+                <div class="recipe-card">
+                    <div class="card-img-container">
+                        <img src="https://images.unsplash.com/photo-1610450954863-7eeca3364402?q=80&w=2154&auto=format&fit=crop" alt="Mishti Doi">
+                        <span class="card-badge">Sweet</span>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Mishti Doi</h4>
+                        <p class="text-secondary small mb-4">Classic Bengali fermented sweet yogurt. Thick and irresistible.</p>
+                        <button class="btn btn-primary-custom w-100" data-bs-toggle="modal" data-bs-target="#recipeModal" 
+                                data-bs-title="Mishti Doi" 
+                                data-bs-desc="The soul of Bengali desserts. A thick, caramel-flavored sweet yogurt traditionally served in earthen pots for a earthy aroma."
+                                data-bs-ingredients='["1L Full cream milk", "1/2 cup Sugar", "2 tbsp Curd starter", "Earthen pot (recommended)"]'
+                                data-bs-steps='["Boil milk until reduced to half- stir constantly.", "Caramelize sugar and add to the milk.", "Once milk is lukewarm, stir in the curd starter.", "Pour into an earthen pot and keep in a warm place for 6-8 hours.", "Refrigerate before serving."]'>
+                            View Recipe
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Modal Template -->
+    <div class="modal fade" id="recipeModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title brand text-white">Recipe Details</h4>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body"></div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-5 text-center py-4 bg-dark text-white">
+        <p class="m-0 opacity-75">&copy; 2026 SpiceRoute. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    
+    <title>Maharashtrian Recipes</title>
+    <style>
+        body {
+            background-color: #fdf6f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .recipe-card {
+            width: 22rem;
+            background-color: #fffaf2;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            transition: transform 0.2s;
+        }
+
+        .recipe-card:hover {
+            transform: scale(1.02);
+        }
+
+        .recipe-image {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .card-footer button {
+            font-weight: 500;
+        }
+
+        .card-footer span {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+
+    <h1 class="text-center my-4 text-danger fw-bold">🍽️ Traditional Maharashtrian Recipes</h1>
+
+    <div class="d-flex flex-wrap justify-content-center gap-4">
+
+        <!-- Repeatable Card Template -->
+        <div class="card recipe-card p-3">
+            <h2 class="card-title text-center">Pav Bhaji</h2>
+            <img src="../img/pavbhaji.jfif" class="recipe-image w-100 mb-3" alt="Pav Bhaji">
+            <button class="btn btn-success w-100">
+                <span class="bi bi-book-half"></span> See Recipe
+            </button>
+        </div>
+
+        <div class="card recipe-card p-3">
+            <h2 class="card-title text-center">Puran Poli</h2>
+            <img src="../img/puran poli.jfif" class="recipe-image w-100 mb-3" alt="Puran Poli">
+            <button class="btn btn-success w-100">
+                <span class="bi bi-book-half"></span> See Recipe
+            </button>
+        </div>
+
+        <div class="card recipe-card p-3">
+            <h2 class="card-title text-center">Misal Pav</h2>
+            <img src="../img/misal_pav.jfif" class="recipe-image w-100 mb-3" alt="Misal Pav">
+            <button class="btn btn-success w-100">
+                <span class="bi bi-book-half"></span> See Recipe
+            </button>
+        </div>
+
+        <div class="card recipe-card p-3">
+            <h2 class="card-title text-center">Vada Pav</h2>
+            <img src="../img/vda_pav.jpeg" class="recipe-image w-100 mb-3" alt="Vada Pav">
+            <button class="btn btn-success w-100">
+                <span class="bi bi-book-half"></span> See Recipe
+            </button>
+        </div>
+
+        <div class="card recipe-card p-3">
+            <h2 class="card-title text-center">Varan Bhat</h2>
+            <img src="../img/varan_bhat.jpg" class="recipe-image w-100 mb-3" alt="Varan Bhat">
+            <button class="btn btn-success w-100">
+                <span class="bi bi-book-half"></span> See Recipe
+            </button>
+        </div>
+
+        <div class="card recipe-card p-3">
+            <h2 class="card-title text-center">Paneer</h2>
+            <img src="../img/panir.jfif" class="recipe-image w-100 mb-3" alt="Paneer">
+            <button class="btn btn-success w-100">
+                <span class="bi bi-book-half"></span> See Recipe
+            </button>
+        </div>
+
+        <div class="card recipe-card p-3">
+            <h2 class="card-title text-center">Zunka Bhakri</h2>
+            <img src="../img/zunka_bhakri.jfif" class="recipe-image w-100 mb-3" alt="Zunka Bhakri">
+            <button class="btn btn-success w-100">
+                <span class="bi bi-book-half"></span> See Recipe
+            </button>
+        </div>
+
+        <div class="card recipe-card p-3">
+            <h2 class="card-title text-center">Modak</h2>
+            <img src="../img/modak.jfif" class="recipe-image w-100 mb-3" alt="Modak">
+            <button class="btn btn-success w-100">
+                <span class="bi bi-book-half"></span> See Recipe
+            </button>
+        </div>
+
+        <div class="card recipe-card p-3">
+            <h2 class="card-title text-center">Kothimbir Vadi</h2>
+            <img src="../img/kothimbar_vadi.jfif" class="recipe-image w-100 mb-3" alt="Kothimbir Vadi">
+            <button class="btn btn-success w-100">
+                <span class="bi bi-book-half"></span> See Recipe
+            </button>
+        </div>
+
+
+        <div class="card recipe-card p-3">
+            <h2 class="card-title text-center">Bhakri Vangi</h2>
+            <img src="../img/bhakari_vangi.jfif" class="recipe-image w-100 mb-3" alt="Zunka Bhakri">
+            <button class="btn btn-success w-100">
+                <span class="bi bi-book-half"></span> See Recipe
+            </button>
+        </div>
+
+        <div class="card recipe-card p-3">
+            <h2 class="card-title text-center">atwadi Rassa</h2>
+            <img src="../img/[atwadi_rassa.jfif" class="recipe-image w-100 mb-3" alt="Modak">
+            <button class="btn btn-success w-100">
+                <span class="bi bi-book-half"></span> See Recipe
+            </button>
+        </div>
+
+        <div class="card recipe-card p-3">
+            <h2 class="card-title text-center">Shev Bhaji</h2>
+            <img src="../img/shev_bhaji.jfif" class="recipe-image w-100 mb-3" alt="Kothimbir Vadi">
+            <button class="btn btn-success w-100">
+                <span class="bi bi-book-half"></span> See Recipe
+            </button>
+        </div>
+
+    </div>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    
+    <title>Maharashtrian Recipes</title>
+    <style>
+        body {
+            background-color: #fdf6f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .recipe-card {
+            width: 22rem;
+            background-color: #fffaf2;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            transition: transform 0.2s;
+        }
+
+        .recipe-card:hover {
+            transform: scale(1.02);
+        }
+
+        .recipe-image {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .card-footer button {
+            font-weight: 500;
+        }
+
+        .card-footer span {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+
+    <h1 class="text-center my-4 text-danger fw-bold">🍽️ Traditional Maharashtrian Recipes</h1>
+
+    <div class="d-flex flex-wrap justify-content-center gap-4">
+
+        <!-- Repeatable Card Template -->
+        <div class="card recipe-card p-3">
+            <h2 class="card-title text-center">Pav Bhaji</h2>
+            <img src="../img/pavbhaji.jfif" class="recipe-image w-100 mb-3" alt="Pav Bhaji">
+            <button class="btn btn-success w-100">
+                <span class="bi bi-book-half"></span> See Recipe
+            </button>
+        </div>
+
+        <div class="card recipe-card p-3">
+            <h2 class="card-title text-center">Puran Poli</h2>
+            <img src="../img/puran poli.jfif" class="recipe-image w-100 mb-3" alt="Puran Poli">
+            <button class="btn btn-success w-100">
+                <span class="bi bi-book-half"></span> See Recipe
+            </button>
+        </div>
+
+        <div class="card recipe-card p-3">
+            <h2 class="card-title text-center">Misal Pav</h2>
+            <img src="../img/misal_pav.jfif" class="recipe-image w-100 mb-3" alt="Misal Pav">
+            <button class="btn btn-success w-100">
+                <span class="bi bi-book-half"></span> See Recipe
+            </button>
+        </div>
+
+        <div class="card recipe-card p-3">
+            <h2 class="card-title text-center">Vada Pav</h2>
+            <img src="../img/vda_pav.jpeg" class="recipe-image w-100 mb-3" alt="Vada Pav">
+            <button class="btn btn-success w-100">
+                <span class="bi bi-book-half"></span> See Recipe
+            </button>
+        </div>
+
+        <div class="card recipe-card p-3">
+            <h2 class="card-title text-center">Varan Bhat</h2>
+            <img src="../img/varan_bhat.jpg" class="recipe-image w-100 mb-3" alt="Varan Bhat">
+            <button class="btn btn-success w-100">
+                <span class="bi bi-book-half"></span> See Recipe
+            </button>
+        </div>
+
+        <div class="card recipe-card p-3">
+            <h2 class="card-title text-center">Paneer</h2>
+            <img src="../img/panir.jfif" class="recipe-image w-100 mb-3" alt="Paneer">
+            <button class="btn btn-success w-100">
+                <span class="bi bi-book-half"></span> See Recipe
+            </button>
+        </div>
+
+        <div class="card recipe-card p-3">
+            <h2 class="card-title text-center">Zunka Bhakri</h2>
+            <img src="../img/zunka_bhakri.jfif" class="recipe-image w-100 mb-3" alt="Zunka Bhakri">
+            <button class="btn btn-success w-100">
+                <span class="bi bi-book-half"></span> See Recipe
+            </button>
+        </div>
+
+        <div class="card recipe-card p-3">
+            <h2 class="card-title text-center">Modak</h2>
+            <img src="../img/modak.jfif" class="recipe-image w-100 mb-3" alt="Modak">
+            <button class="btn btn-success w-100">
+                <span class="bi bi-book-half"></span> See Recipe
+            </button>
+        </div>
+
+        <div class="card recipe-card p-3">
+            <h2 class="card-title text-center">Kothimbir Vadi</h2>
+            <img src="../img/kothimbar_vadi.jfif" class="recipe-image w-100 mb-3" alt="Kothimbir Vadi">
+            <button class="btn btn-success w-100">
+                <span class="bi bi-book-half"></span> See Recipe
+            </button>
+        </div>
+
+
+        <div class="card recipe-card p-3">
+            <h2 class="card-title text-center">Bhakri Vangi</h2>
+            <img src="../img/bhakari_vangi.jfif" class="recipe-image w-100 mb-3" alt="Zunka Bhakri">
+            <button class="btn btn-success w-100">
+                <span class="bi bi-book-half"></span> See Recipe
+            </button>
+        </div>
+
+        <div class="card recipe-card p-3">
+            <h2 class="card-title text-center">atwadi Rassa</h2>
+            <img src="../img/[atwadi_rassa.jfif" class="recipe-image w-100 mb-3" alt="Modak">
+            <button class="btn btn-success w-100">
+                <span class="bi bi-book-half"></span> See Recipe
+            </button>
+        </div>
+
+        <div class="card recipe-card p-3">
+            <h2 class="card-title text-center">Shev Bhaji</h2>
+            <img src="../img/shev_bhaji.jfif" class="recipe-image w-100 mb-3" alt="Kothimbir Vadi">
+            <button class="btn btn-success w-100">
+                <span class="bi bi-book-half"></span> See Recipe
+            </button>
+        </div>
+
+    </div>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

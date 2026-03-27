@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Authentic West Indian and Maharashtrian recipes. Discover how to cook Pav Bhaji, Vada Pav, Puran Poli, and more.">
+    <title>West Indian Recipes | SpiceRoute</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap and Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation (Same as Index) -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand brand fs-3" href="index.html">Spice<span>Route</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Recipes</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="north_indian.html">North Indian</a></li>
+                            <li><a class="dropdown-item" href="south_indian.html">South Indian</a></li>
+                            <li><a class="dropdown-item" href="west_indian.html">West Indian</a></li>
+                            <li><a class="dropdown-item" href="east_indian.html">East Indian</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="region-section pt-5 mt-5">
+        <div class="container text-center pt-5">
+            <div class="section-title mb-0">
+                <span>Coastal & Earthy Flavors</span>
+                <h2>West Indian Recipes</h2>
+            </div>
+        </div>
+    </header>
+
+    <!-- Recipe Grid -->
+    <section class="container mb-5">
+        <div class="row g-4">
+            <!-- Pav Bhaji -->
+            <div class="col-md-6 col-lg-4">
+                <div class="recipe-card">
+                    <div class="card-img-container">
+                        <img src="img/pavbhaji.jfif" alt="Pav Bhaji">
+                        <span class="card-badge">Popular</span>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Pav Bhaji</h4>
+                        <p class="text-secondary small mb-4">Spices, butter, and mashed vegetables served with soft buns.</p>
+                        <button class="btn btn-primary-custom w-100" data-bs-toggle="modal" data-bs-target="#recipeModal" 
+                                data-bs-title="Pav Bhaji" 
+                                data-bs-desc="A spicy, flavorful, and buttery mash of vegetables, originating in Mumbai. Traditionally served with pan-toasted buttered pav (buns)."
+                                data-bs-ingredients='["4 large potatoes", "2 cups cauliflower", "1 cup green peas", "2 onions", "3 tomatoes", "2 tbsp Ginger garlic paste", "3 tbsp Pav Bhaji masala", "Lots of butter"]'
+                                data-bs-steps='["Pressure cook and mash potatoes, cauliflower, and peas.", "Sauté onions, ginger, and garlic in butter.", "Add tomatoes and capsicum, cook until soft.", "Add spices and mashed veggies.", "Simmer with water until thick.", "Serve with toasted buns."]'>
+                            View Recipe
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dhokla -->
+            <div class="col-md-6 col-lg-4">
+                <div class="recipe-card">
+                    <div class="card-img-container">
+                        <img src="img/dhokala.jpg" alt="Dhokla">
+                        <span class="card-badge">Gujarati Special</span>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Khaman Dhokla</h4>
+                        <p class="text-secondary small mb-4">Soft, fluffy, and savory chickpea flour steamed cakes.</p>
+                        <button class="btn btn-primary-custom w-100" data-bs-toggle="modal" data-bs-target="#recipeModal" 
+                                data-bs-title="Khaman Dhokla" 
+                                data-bs-desc="A classic steamed snack from Gujarat. Light, spongy, and a perfect balance of sweet and tangy."
+                                data-bs-ingredients='["1.5 cups Besan (Chickpea flour)", "1 tbsp Semolina (Suji)", "1 tsp Ginger paste", "1 tsp Citric acid or Lemon juice", "1 tsp Fruit salt (Eno)", "Mustard seeds, Curry leaves for tempering"]'
+                                data-bs-steps='["Mix flour, water, lemon, and spices into a smooth batter.", "Add fruit salt (Eno) just before steaming to make it fluffy.", "Steam for 15-20 minutes.", "Prepare tempering with oil, mustard seeds, and curry leaves.", "Pour tempering over sliced dhokla."]'>
+                            View Recipe
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vada Pav -->
+            <div class="col-md-6 col-lg-4">
+                <div class="recipe-card">
+                    <div class="card-img-container">
+                        <img src="img/vda_pav.jpeg" alt="Vada Pav">
+                        <span class="card-badge">Street Food</span>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Vada Pav</h4>
+                        <p class="text-secondary small mb-4">The ultimate Mumbai street food. Deep-fried potato dumpling inside a bun.</p>
+                        <button class="btn btn-primary-custom w-100" data-bs-toggle="modal" data-bs-target="#recipeModal" 
+                                data-bs-title="Vada Pav" 
+                                data-bs-desc="The iconic Mumbai burger. A spiced potato fritter (vada) nestled inside a soft bread bun (pav), served with hot and sweet chutneys."
+                                data-bs-ingredients='["Potatoes (boiled and mashed)", "Besan batter", "Green chillies & garlic", "Turmeric, Mustard seeds", "Pav (buns)", "Sukha garlic chutney"]'
+                                data-bs-steps='["Sauté garlic, chilli, and curry leaves, then mix with mashed potatoes.", "Shape into balls and dip in besan batter.", "Deep fry until golden brown.", "Serve hot in pav with chutneys and fried chillies."]'>
+                            View Recipe
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Puran Poli -->
+            <div class="col-md-6 col-lg-4">
+                <div class="recipe-card">
+                    <div class="card-img-container">
+                        <img src="img/puran poli.jfif" alt="Puran Poli">
+                        <span class="card-badge">Sweet</span>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Puran Poli</h4>
+                        <p class="text-secondary small mb-4">Sweet flatbread stuffed with lentil and jaggery filling.</p>
+                        <button class="btn btn-primary-custom w-100" data-bs-toggle="modal" data-bs-target="#recipeModal" 
+                                data-bs-title="Puran Poli" 
+                                data-bs-desc="A festive Maharashtrian sweet flatbread filled with a sweet mixture (puran) made of chana dal and jaggery."
+                                data-bs-ingredients='["1 cup Chana Dal", "1 cup Jaggery", "Nutmeg powder", "Wheat flour dough", "Ghee"]'
+                                data-bs-steps='["Cook chana dal, mash it, and cook with jaggery into a thick paste (puran).", "Stuff the puran inside a wheat flour dough ball.", "Roll it thin and cook on a hot griddle with ghee.", "Serve hot with plenty of ghee."]'>
+                            View Recipe
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Modal Template -->
+    <div class="modal fade" id="recipeModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title brand">Recipe Details</h4>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Dynamic content loaded via JS -->
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (Same as Index) -->
+    <footer class="mt-5">
+        <div class="container text-center py-4">
+            <p class="m-0 text-secondary">&copy; 2026 SpiceRoute. All Rights Reserved. Designed by Vijayalaxmi.</p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

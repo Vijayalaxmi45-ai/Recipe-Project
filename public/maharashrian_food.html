@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maharashtrian Recipes</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+  <style>
+    body {
+      background-color: #fdf6f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .recipe-card {
+      width: 20rem;
+      background-color: #fffaf2;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .recipe-card:hover {
+      transform: scale(1.03);
+    }
+    .recipe-image {
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .card-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #d9534f;
+      text-align: center;
+    }
+    .recipe-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #d9534f;
+      margin-bottom: 15px;
+    }
+    .recipe-process {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+    .modal-body {
+      font-size: 1.1rem;
+      color: #5a5a5a;
+    }
+    .btn-custom {
+      background-color: #d9534f;
+      color: white;
+      transition: background-color 0.3s;
+    }
+    .btn-custom:hover {
+      background-color: #c9302c;
+    }
+  </style>
+</head>
+<body class="container py-4">
+  <h1 class="text-center mb-5 text-danger fw-bold">🍽️ Traditional Maharashtrian Recipes</h1>
+  <div class="d-flex flex-wrap justify-content-center gap-4" id="recipeContainer"></div>
+
+  <!-- Modal for Recipe Details -->
+  <div class="modal fade" id="recipeModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow">
+        <div class="modal-header bg-danger text-white">
+          <h5 class="modal-title" id="recipeTitle"></h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p id="recipeDescription" class="fs-5 text-secondary"></p>
+          <h6 class="recipe-title">Recipe Process:</h6>
+          <p id="recipeProcess" class="recipe-process"></p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const recipes = [
+      { 
+        title: "Pav Bhaji", 
+        image: "../img/pavbhaji.jfif", 
+        description: "Spicy blend of mashed vegetables in tomato gravy, served with buttered pav.", 
+        process: "1. Heat oil in a pan and add cumin seeds.\n2. Add finely chopped onions and sauté.\n3. Add tomatoes, and cook until soft.\n4. Add mashed vegetables and spices.\n5. Simmer for 10 minutes.\n6. Serve with buttered pav." 
+      },
+      { 
+        title: "Puran Poli", 
+        image: "../img/puran poli.jfif", 
+        description: "Sweet flatbread stuffed with jaggery and chana dal.", 
+        process: "1. Cook chana dal and grind with jaggery.\n2. Prepare dough with flour and water.\n3. Stuff the dough with chana dal mixture.\n4. Roll into a flatbread and cook on a griddle." 
+      },
+      { 
+        title: "Vada Pav", 
+        image: "../img/vda_pav.jpeg", 
+        description: "Spicy potato vada in a soft bun served with chutneys.", 
+        process: "1. Prepare a spicy potato filling.\n2. Coat with chickpea flour and fry until crispy.\n3. Serve in a bun with chutneys." 
+      },
+      { 
+        title: "Misal Pav", 
+        image: "../img/misal_pav.jfif", 
+        description: "Spicy moth bean curry with farsan topping, served with pav.", 
+        process: "1. Cook moth beans with spices.\n2. Prepare gravy with onions and tomatoes.\n3. Serve the curry topped with farsan and pav." 
+      },
+      { 
+        title: "Varan Bhat", 
+        image: "../img/varan_bhat.jpg", 
+        description: "Comforting dish of dal (lentils) and rice, seasoned with ghee.", 
+        process: "1. Cook dal with turmeric and salt.\n2. Serve with steamed rice and ghee." 
+      },
+      { 
+        title: "panir", 
+        image: "../img/panir.jfif", 
+        description: "Comforting dish of dal (lentils) and rice, seasoned with ghee.", 
+        process: "1. Cook dal with turmeric and salt.\n2. Serve with steamed rice and ghee." 
+      },
+      { 
+        title: "bhakari vangi", 
+        image: "../img/bhakari_vangi.jfif", 
+        description: "Comforting dish of dal (lentils) and rice, seasoned with ghee.", 
+        process: "1. Cook dal with turmeric and salt.\n2. Serve with steamed rice and ghee." 
+      },
+      { 
+        title: "modak", 
+        image: "../img/modak.jfif", 
+        description: "Comforting dish of dal (lentils) and rice, seasoned with ghee.", 
+        process: "1. Cook dal with turmeric and salt.\n2. Serve with steamed rice and ghee." 
+      },
+      { 
+        title: "Shev Bhaji", 
+        image: "../img/shev_bhaji.jfif", 
+        description: "Comforting dish of dal (lentils) and rice, seasoned with ghee.", 
+        process: "1. Cook dal with turmeric and salt.\n2. Serve with steamed rice and ghee." 
+      },
+    ];
+
+    const container = document.getElementById("recipeContainer");
+
+    recipes.forEach(({ title, image, description, process }) => {
+      const card = `
+        <div class="card recipe-card p-3">
+          <h2 class="card-title">${title}</h2>
+          <img src="${image}" class="recipe-image w-100 mb-3" alt="${title}">
+          <p class="text-secondary mb-3">${description}</p>
+          <button class="btn btn-custom w-100 see-recipe-btn" 
+            data-title="${title}" 
+            data-desc="${description}" 
+            data-process="${process}">
+            <i class="bi bi-book-half"></i> See Recipe
+          </button>
+        </div>`;
+      container.insertAdjacentHTML("beforeend", card);
+    });
+
+    document.addEventListener('click', function (e) {
+      const btn = e.target.closest('.see-recipe-btn');
+      if (btn) {
+        document.getElementById('recipeTitle').textContent = btn.dataset.title;
+        document.getElementById('recipeDescription').textContent = btn.dataset.desc;
+        document.getElementById('recipeProcess').textContent = btn.dataset.process;
+        new bootstrap.Modal(document.getElementById('recipeModal')).show();
+      }
+    });
+  </script>
+</body>
+</html>

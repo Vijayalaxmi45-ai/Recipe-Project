@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover authentic regional Indian recipes. From spicy North Indian curries to savory South Indian dosas, explore the rich culinary heritage of India.">
+    <meta name="keywords" content="Indian Recipes, Food, Regional Cuisine, Cooking, North Indian, South Indian, Maharashtrian Recipes">
+    <meta name="author" content="Vijayalaxmi">
+    <title>SpiceRoute | Authentic Indian Regional Recipes</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap and Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand brand fs-3" href="index.html">Spice<span>Route</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Recipes</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="north_indian.html">North Indian</a></li>
+                            <li><a class="dropdown-item" href="south_indian.html">South Indian</a></li>
+                            <li><a class="dropdown-item" href="west_indian.html">West Indian</a></li>
+                            <li><a class="dropdown-item" href="east_indian.html">East Indian</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <div class="ms-lg-4 text-center">
+                    <a href="registration.html" class="btn btn-primary-custom">Join Community</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content text-center text-lg-start">
+                    <h1 class="animate-up">A Culinary Journey Across <span>India</span></h1>
+                    <p class="lead mb-5 opacity-75">Discover the hidden gems of regional Indian kitchens. Traditional flavors meets modern presentation.</p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#regions" class="btn btn-primary-custom btn-lg">Explore Regions</a>
+                        <a href="registration.html" class="btn btn-outline-dark btn-lg border-2 rounded-pill px-4">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <div class="position-relative">
+                        <img src="img/masala_rice.jfif" alt="Delicious Dish" class="img-fluid rounded-circle shadow-lg border-white border-4" style="width: 500px; height: 500px; object-fit: cover;">
+                        <div class="bg-white p-3 rounded-4 shadow position-absolute bottom-0 start-0 translate-middle animate-up d-none d-md-block" style="width: 200px;">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-star-fill text-warning fs-3 me-2"></i>
+                                <div>
+                                    <h6 class="mb-0">4.9/5</h6>
+                                    <small class="text-secondary">Community Rating</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regional Categories Section -->
+    <section id="regions" class="region-section">
+        <div class="container">
+            <div class="section-title">
+                <span>Discover Local Flavors</span>
+                <h2>Explore Regional Cuisines</h2>
+            </div>
+            <div class="row g-4">
+                <!-- North India -->
+                <div class="col-md-6 col-lg-3">
+                    <a href="north_indian.html" class="text-decoration-none">
+                        <div class="recipe-card text-center pb-3">
+                            <div class="card-img-container">
+                                <img src="img/panir.jfif" alt="North Indian Food">
+                            </div>
+                            <div class="p-3">
+                                <h4 class="card-title text-dark">North India</h4>
+                                <p class="text-secondary small">Rich, creamy, and flavorful gravies.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- South India -->
+                <div class="col-md-6 col-lg-3">
+                    <a href="south_indian.html" class="text-decoration-none">
+                        <div class="recipe-card text-center pb-3">
+                            <div class="card-img-container">
+                                <img src="img/idali.jfif" alt="South Indian Food">
+                            </div>
+                            <div class="p-3">
+                                <h4 class="card-title text-dark">South India</h4>
+                                <p class="text-secondary small">Coastal flavors and fermented delicacies.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- West India -->
+                <div class="col-md-6 col-lg-3">
+                    <a href="west_indian.html" class="text-decoration-none">
+                        <div class="recipe-card text-center pb-3">
+                            <div class="card-img-container">
+                                <img src="img/vda_pav.jpeg" alt="West Indian Food">
+                            </div>
+                            <div class="p-3">
+                                <h4 class="card-title text-dark">West India</h4>
+                                <p class="text-secondary small">Spicy, tangy, and earthy preparations.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- East India -->
+                <div class="col-md-6 col-lg-3">
+                    <a href="east_indian.html" class="text-decoration-none">
+                        <div class="recipe-card text-center pb-3">
+                            <div class="card-img-container">
+                                <img src="img/modak.jfif" alt="East Indian Food">
+                            </div>
+                            <div class="p-3">
+                                <h4 class="card-title text-dark">East India</h4>
+                                <p class="text-secondary small">Steamed sweets and authentic fish curries.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="brand text-white fs-2 mb-4">Spice<span>Route</span></h3>
+                    <p class="text-secondary">Bringing the taste of India to your kitchen. Subscribe for unique recipes and cooking tips.</p>
+                    <div class="input-group mt-4">
+                        <input type="email" class="form-control rounded-pill-start" placeholder="Email Address">
+                        <button class="btn btn-primary-custom rounded-pill-end">Join</button>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-2">
+                    <h5 class="mb-4">Regions</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="north_indian.html" class="footer-link">North India</a></li>
+                        <li><a href="south_indian.html" class="footer-link">South India</a></li>
+                        <li><a href="west_indian.html" class="footer-link">West India</a></li>
+                        <li><a href="east_indian.html" class="footer-link">East India</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-4">Connect</h5>
+                    <div class="d-flex gap-3 fs-3">
+                        <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-5 border-secondary">
+            <div class="text-center pb-3 mt-4 text-secondary">
+                <p>&copy; 2026 SpiceRoute. All Rights Reserved. Designed by Vijayalaxmi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap and Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
