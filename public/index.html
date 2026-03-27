@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Discover authentic regional Indian recipes. From spicy North Indian curries to savory South Indian dosas, explore the rich culinary heritage of India.">
     <meta name="keywords" content="Indian Recipes, Food, Regional Cuisine, Cooking, North Indian, South Indian, Maharashtrian Recipes">
-    <meta name="author" content="Vijayalaxmi">
+    <meta name="author" content="Vijayalaxmi Kamble">
     <title>SpiceRoute | Authentic Indian Regional Recipes</title>
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3565/3565418.png">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +26,7 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
         <div class="container">
             <a class="navbar-brand brand fs-3" href="index.html">Spice<span>Route</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -41,11 +44,14 @@
                             <li><a class="dropdown-item" href="east_indian.html">East Indian</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
-                <div class="ms-lg-4 text-center">
-                    <a href="registration.html" class="btn btn-primary-custom">Join Community</a>
+                <div class="ms-lg-4 d-flex gap-2 justify-content-center mt-3 mt-lg-0">
+                    <button class="theme-toggle" id="bwToggle">
+                        <i class="bi bi-moon"></i> Noir Mode
+                    </button>
+                    <a href="about.html#registerForm" class="btn btn-primary-custom d-none d-lg-inline-block">Join Community</a>
                 </div>
             </div>
         </div>
@@ -60,7 +66,7 @@
                     <p class="lead mb-5 opacity-75">Discover the hidden gems of regional Indian kitchens. Traditional flavors meets modern presentation.</p>
                     <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
                         <a href="#regions" class="btn btn-primary-custom btn-lg">Explore Regions</a>
-                        <a href="registration.html" class="btn btn-outline-dark btn-lg border-2 rounded-pill px-4">Get Started</a>
+                        <a href="about.html" class="btn btn-outline-dark btn-lg border-2 rounded-pill px-4">Get Started</a>
                     </div>
                 </div>
                 <div class="col-lg-6 mt-5 mt-lg-0">
@@ -152,37 +158,31 @@
     <!-- Footer -->
     <footer id="contact">
         <div class="container">
-            <div class="row g-4">
+            <div class="row g-4 text-center text-lg-start">
                 <div class="col-lg-4">
                     <h3 class="brand text-white fs-2 mb-4">Spice<span>Route</span></h3>
                     <p class="text-secondary">Bringing the taste of India to your kitchen. Subscribe for unique recipes and cooking tips.</p>
-                    <div class="input-group mt-4">
-                        <input type="email" class="form-control rounded-pill-start" placeholder="Email Address">
-                        <button class="btn btn-primary-custom rounded-pill-end">Join</button>
-                    </div>
                 </div>
-                <div class="col-lg-2 offset-lg-2">
-                    <h5 class="mb-4">Regions</h5>
+                <div class="col-lg-4 text-center">
+                    <h5 class="mb-4 text-white">Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="north_indian.html" class="footer-link">North India</a></li>
-                        <li><a href="south_indian.html" class="footer-link">South India</a></li>
-                        <li><a href="west_indian.html" class="footer-link">West India</a></li>
-                        <li><a href="east_indian.html" class="footer-link">East India</a></li>
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="https://my-portfillo-delta.vercel.app/" target="_blank" class="footer-link">Portfolio</a></li>
+                        <li><a href="https://www.linkedin.com/in/vijayalaxmi-kamble-065620289/" target="_blank" class="footer-link">LinkedIn</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4">
-                    <h5 class="mb-4">Connect</h5>
-                    <div class="d-flex gap-3 fs-3">
+                <div class="col-lg-4 text-center text-lg-end">
+                    <h5 class="mb-4 text-white">Connect</h5>
+                    <div class="d-flex gap-3 fs-3 justify-content-center justify-content-lg-end">
                         <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
                         <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
                         <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
                     </div>
                 </div>
             </div>
             <hr class="mt-5 border-secondary">
             <div class="text-center pb-3 mt-4 text-secondary">
-                <p>&copy; 2026 SpiceRoute. All Rights Reserved. Designed by Vijayalaxmi.</p>
+                <p>&copy; 2026 SpiceRoute. Developed by <a href="about.html" class="text-white text-decoration-none">Vijayalaxmi Kamble</a>.</p>
             </div>
         </div>
     </footer>

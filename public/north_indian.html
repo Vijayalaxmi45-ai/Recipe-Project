@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Authentic North Indian recipes. Discover how to cook Paneer Tikka, Paratha, Roti, and rich gravies.">
+    <meta name="description" content="Authentic North Indian recipes. Discover how to cook Paneer Tikka, Butter Chicken, and rich gravies.">
+    <meta name="author" content="Vijayalaxmi Kamble">
     <title>North Indian Recipes | SpiceRoute</title>
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3565/3565418.png">
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     
@@ -37,9 +41,13 @@
                             <li><a class="dropdown-item" href="east_indian.html">East Indian</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                 </ul>
+                <div class="ms-lg-4 d-flex gap-2 justify-content-center mt-3 mt-lg-0">
+                    <button class="theme-toggle" id="bwToggle">
+                        <i class="bi bi-moon"></i> Noir Mode
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
@@ -61,7 +69,7 @@
             <div class="col-md-6 col-lg-4">
                 <div class="recipe-card">
                     <div class="card-img-container">
-                        <img src="img/panir.jfif" alt="Paneer Tikka">
+                        <img src="img/panir.jfif" alt="Matar Paneer">
                         <span class="card-badge">Stardish</span>
                     </div>
                     <div class="card-body">
@@ -72,6 +80,27 @@
                                 data-bs-desc="A classic North Indian comfort dish. Soft paneer cubes and sweet peas are cooked in a rich, buttery tomato-onion gravy."
                                 data-bs-ingredients='["200g Paneer", "1 cup Green peas", "2 Onions (pureed)", "3 Tomatoes (pureed)", "Ginger garlic paste", "Garam masala, Cream", "Butter"]'
                                 data-bs-steps='["Fry paneer cubes until golden (optional).", "Sauté pureed onions with ginger-garlic paste until brown.", "Add tomato puree and cook until oil separates.", "Add spices, peas, and a bit of water- simmer.", "Mix in paneer and a splash of cream.", "Garnish with coriander."]'>
+                            View Recipe
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Butter Chicken -->
+            <div class="col-md-6 col-lg-4">
+                <div class="recipe-card">
+                    <div class="card-img-container">
+                        <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?q=80&w=2070&auto=format&fit=crop" alt="Butter Chicken">
+                        <span class="card-badge">Bestseller</span>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Butter Chicken</h4>
+                        <p class="text-secondary small mb-4">Succulent chicken in a velvety, buttery tomato and cream sauce.</p>
+                        <button class="btn btn-primary-custom w-100" data-bs-toggle="modal" data-bs-target="#recipeModal" 
+                                data-bs-title="Butter Chicken (Murgh Makhani)" 
+                                data-bs-desc="The crown jewel of North Indian non-veg. Smoked tandoori chicken pieces simmered in a rich tomato, butter, and cream-based makhani gravy."
+                                data-bs-ingredients='["Chicken (tandoori marinated)", "Tomato puree", "Butter & Heavy cream", "Khas-khas paste", "Kasuri methi", "Honey/Sugar", "Garam masala"]'
+                                data-bs-steps='["Grill or pan-fry marinated chicken pieces.", "Prepare a smooth tomato gravy with butter and spices.", "Add cream and kasuri methi for the signature aroma.", "Fold in the chicken and simmer.", "Top with a dollop of butter and serve."]'>
                             View Recipe
                         </button>
                     </div>
@@ -93,27 +122,6 @@
                                 data-bs-desc="The ultimate Punjabi breakfast. Thick flatbreads stuffed with a savory potato filling, served with curd and pickles."
                                 data-bs-ingredients='["Wheat flour dough", "3 boiled potatoes", "Green chillies, Ginger", "Ajwain, Amchur powder", "Butter, Oil"]'
                                 data-bs-steps='["Mash boiled potatoes with spices and chillies.", "Pinch a ball of dough, flatten, and place stuffing.", "Close the dough around the stuffing and roll out gently.", "Toast on a hot griddle with plenty of butter/ghee.", "Serve hot with yogurt."]'>
-                            View Recipe
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Roti -->
-            <div class="col-md-6 col-lg-4">
-                <div class="recipe-card">
-                    <div class="card-img-container">
-                        <img src="img/roti.jfif" alt="Tandoori Roti">
-                        <span class="card-badge">Essential</span>
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Phulka Roti</h4>
-                        <p class="text-secondary small mb-4">Soft, puffed-up whole wheat flatbread. A staple in Indian meals.</p>
-                        <button class="btn btn-primary-custom w-100" data-bs-toggle="modal" data-bs-target="#recipeModal" 
-                                data-bs-title="Phulka Roti" 
-                                data-bs-desc="A lightweight, airy whole wheat flatbread cooked directly on a flame to puff up like a balloon."
-                                data-bs-ingredients='["2 cups Wheat flour", "Warm water", "Pinch of salt", "1 tsp Oil", "Ghee for spread"]'
-                                data-bs-steps='["Knead a soft, smooth dough with water and salt.", "Rest for 15-20 minutes.", "Roll out small thin circles.", "Cook on a griddle until half-done.", "Place directly on high flame until it puffs up.", "Apply ghee and serve."]'>
                             View Recipe
                         </button>
                     </div>
@@ -142,7 +150,7 @@
     <!-- Footer -->
     <footer class="mt-5">
         <div class="container text-center py-4">
-            <p class="m-0 text-secondary">&copy; 2026 SpiceRoute. All Rights Reserved.</p>
+            <p class="m-0 text-secondary">&copy; 2026 SpiceRoute. Developed by <a href="about.html" class="text-dark text-decoration-none">Vijayalaxmi Kamble</a>.</p>
         </div>
     </footer>
 

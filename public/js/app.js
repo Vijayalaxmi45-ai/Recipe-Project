@@ -3,13 +3,51 @@ document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
-            navbar.classList.add('navbar-scrolled');
             navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+            navbar.classList.add('shadow-sm');
         } else {
-            navbar.classList.remove('navbar-scrolled');
             navbar.style.background = 'rgba(255, 255, 255, 0.85)';
+            navbar.classList.remove('shadow-sm');
         }
     });
+
+    // BW Mode Toggle Logic
+    const toggleBtn = document.getElementById('bwToggle');
+    if (toggleBtn) {
+        toggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('bw-mode');
+            const isDarkMode = document.body.classList.contains('bw-mode');
+            localStorage.setItem('theme', isDarkMode ? 'bw' : 'light');
+            toggleBtn.innerHTML = isDarkMode ? '<i class="bi bi-sun"></i> Light Mode' : '<i class="bi bi-moon"></i> Noir Mode';
+        });
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'bw') {
+            document.body.classList.add('bw-mode');
+            toggleBtn.innerHTML = '<i class="bi bi-sun"></i> Light Mode';
+        }
+    }
+
+    // Database Simulation (Registration)
+    const registerForm = document.getElementById('registerForm');
+    if (registerForm) {
+        registerForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const userData = {
+                name: document.getElementById('regName').value,
+                email: document.getElementById('regEmail').value,
+                timestamp: new Date().toISOString()
+            };
+
+            let users = JSON.parse(localStorage.getItem('users') || '[]');
+            users.push(userData);
+            localStorage.setItem('users', JSON.stringify(users));
+
+            alert('Registration data saved to LocalStorage Database! Welcome, ' + userData.name);
+            registerForm.reset();
+        });
+    }
 
     // Animate UI elements on load
     const elementsToAnimate = document.querySelectorAll('.recipe-card, .section-title, .hero-content');
